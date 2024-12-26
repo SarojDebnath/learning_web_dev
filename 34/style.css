@@ -1,0 +1,20 @@
+img {
+    float: left;
+    display: flow-root;
+}
+.card {
+    border: 2px solid black;
+}
+.cards {
+    border: 2px solid black;
+    padding: 7px;
+    margin: 7px;
+}
+.cards:nth-child(1) {
+    position: relative;
+    left: 3px;
+}
+.cards:nth-child(3) {
+    background-color: brown;
+    clear: left;
+}

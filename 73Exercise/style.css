@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.container img {
+    margin: 15px;
+    border-radius: 5px;
+}
+.container p{
+    position: relative;
+    top: 3em;
+    left: -9.5em;
+    color: rgb(175, 173, 173);
+}
+.intro {
+    position: relative;
+    top: 1em;
+    left: 0em;
+}
+.timestamp{
+    background-color: black;
+    position: relative;
+    top: 4.5em;
+    left: -31em;
+    height: 30px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

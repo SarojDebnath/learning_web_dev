@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color: rgb(76, 76, 236);
+    --ancolor: rgb(121, 232, 121);
+}
+.text {
+    background-color: var(--color);
+}
+ul li {
+    list-style: none;
+    padding: 2vw;
+}
+ul li:nth-child(2) {
+    background-color: var(--color);
+}
+ul {
+    display: flex;
+    background-color: var(--ancolor);
+}

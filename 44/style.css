@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 1vw;
+    margin-top: 0;
+    padding: 1vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    left: 20vw;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    /*background-color: aqua;*/
+}
+.item {
+    margin: 1vw;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.order-1 {
+    margin-right: auto;
+}
+.Headers{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    padding: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#reviewimg {
+    position: relative;
+    top: 0.1vh;
+    height: 6vh;
+    margin: 1vw;
+}
+.para2 {
+    margin: 4vh;
+    margin-bottom: 1vh;
+    font-size: smaller;
+    width: 60vw;
+    text-align: center;
+}
+.download1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    min-width: 256px;
+    min-height: 48px;
+    position: relative;
+    left: 40vw;
+}
+.MAC {
+    text-decoration: none;
+    color: white;
+}
+
+.downloadversions {
+    margin-top: 12vh;
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-rows: repeat(4, 1fr);   /* 4 rows with equal height */
+    gap: 3vw; /* Spacing between grid items */
+    justify-content: center;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+}
+
+
+.language {
+    width: 18vw;
+    height: 18vw;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: #f1eaea;
+    /*margin: 1vw;*/
+    border-radius: 7px;
+    
+}
+
+.english :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.english :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.english :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.english :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+
+.deutsch :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.deutsch :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.deutsch :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.deutsch :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.italiano :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.italiano :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.italiano :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.italiano :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.spanish :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.spanish :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.spanish :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.spanish :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.french :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.french :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.french :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.french :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.portuguese :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.portuguese :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.portuguese :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.portuguese :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.japanese :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.japanese :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.japanese :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.japanese :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.bangla :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.bangla :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.bangla :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.bangla :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.telegue :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.telegue :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.telegue :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.telegue :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+.hindi :nth-child(1) {
+    margin-top: 2vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.hindi :nth-child(2) {
+    margin-top: 3vw;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.hindi :nth-child(3) {
+    margin-left: 4.5vw;
+    width: 9vw;
+    height: 2vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    background-color: #5cb85c;
+    
+}
+.hindi :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+.frame {
+    padding: 7px;
+    height: 50vh;
+    width: 15vw;
+    border: 2px solid black;
+    border-radius: 2ch;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    align-items: center;
+    display: flexbox;
+    align-items: center;
+}
+.image img {
+    padding: 7px;
+    height: 20vh;
+    width: 14vw;
+    border-radius: 2ch;
+}
+.details {
+    padding: 7px;
+
+}
+.nature {
+    border: 1px solid yellow;
+    box-shadow: 0 4px 6px rgba(222, 92, 92, 0.2);
+}
+.lake {
+    border: 1px solid yellow;
+    box-shadow: 0 4px 6px rgba(176, 77, 77, 0.2);
+    margin-left: 10px;
+}
+#readmore {
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid red;
+    box-shadow: 0 4px 6px green;
+    background-color: aqua;
+    border-radius: 1cm;
+    width: 6vw;
+    position: relative;
+    left: 53px;
+}
+div > p {
+    text-overflow: ellipsis;
+}

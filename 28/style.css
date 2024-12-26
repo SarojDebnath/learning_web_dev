@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    margin: 3px;
+    padding: 5px;
+    border: 2px solid black;
+    height: 80px;
+    width: 120px;
+}
+.box1 {
+    background-color: aliceblue;
+    position: sticky;
+    top:0px;
+    height: 111px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+.box2 {
+    background-color: violet;
+}
+.box3 {
+    background-color: brown;
+    position: relative;
+    top: 34px;
+    left: 64px;
+}
+.box4 {
+    background-color: yellowgreen;
+}

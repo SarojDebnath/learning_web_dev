@@ -1,0 +1,21 @@
+.red {
+    color: brown;
+}
+#green {
+    background-color: blue;
+}
+* {
+    background-color: yellow;
+}
+div p {
+    color: aqua;
+}
+a:link {
+    color:green;
+}
+.linkfb:hover{
+    color: grey;
+}
+a:visited{
+    color:black;
+}

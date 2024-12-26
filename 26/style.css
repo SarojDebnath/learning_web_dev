@@ -1,0 +1,7 @@
+.box {
+    width: 10vw;
+    height: 20vh;
+    border: 2px solid black;
+    overflow: auto auto;
+    text-overflow: ellipsis;
+}

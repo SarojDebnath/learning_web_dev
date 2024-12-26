@@ -1,0 +1,16 @@
+.box{
+    height: 45px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+}
+.box1{
+    height: 45px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+.container {
+    width: 60vw;
+    height: 40vh;
+    background-color: blue;
+}
+.box {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 60px;
+    position: relative;
+    top: 35vh;
+    animation: ani1 2s cubic-bezier(0, 0, 0.45, 0.89) 2s infinite alternate-reverse,
+               ani 10s linear 2s infinite alternate-reverse;
+               
+}
+
+@keyframes ani {
+    from {
+
+    }
+    to {
+        transform: translateX(60vw);
+    }
+}
+@keyframes ani1 {
+    from {
+
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+

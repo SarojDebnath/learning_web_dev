@@ -1,0 +1,9 @@
+.body {
+    background-color: yellow;
+}
+/*@media not|only mediatype*/
+@media only screen and (max-width:455px){
+    .body {
+        background-color: orange;
+    }
+}

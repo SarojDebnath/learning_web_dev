@@ -1,0 +1,29 @@
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.box1 {
+    height: 50px;
+    width: 50px;
+    margin: 2vw;
+    margin-top: 3vw;
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.6) translateX(30%) skew(5deg);
+}
+.container {
+
+    width: 100vw;
+    height: 80vh;
+    border: 2px solid purple;
+
+}

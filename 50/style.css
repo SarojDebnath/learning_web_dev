@@ -1,0 +1,11 @@
+.container {
+    width: 80vw;
+    height: 60vh;
+    border: 2px solid black;
+}
+img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;/*contain;cover*/
+    object-position: top right;
+}

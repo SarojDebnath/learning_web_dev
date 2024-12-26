@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+:root{
+    --color1: rgb(238, 155, 155);
+    --color2: rgb(121, 121, 232);
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+ul li{
+    margin: 7px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+ul li:nth-child(1) {
+    background-color: rgb(158, 235, 140);
+}
+ul li:nth-child(1):hover {
+    background-color: rgb(246, 150, 151);
+}
+ul li:nth-child(2) {
+    background-color: rgb(115, 216, 92);
+}
+ul li:nth-child(2):hover {
+    background-color: rgb(116, 72, 15);
+}
+ul li:nth-child(3):hover {
+    background-color: var(--color2);
+}
+ul li:nth-child(3) {
+    background-color: rgb(28, 78, 17);
+}
+.bar {
+    position: sticky;
+}
