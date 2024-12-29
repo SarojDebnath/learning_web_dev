@@ -94,7 +94,15 @@ async function main() {
         currentsong.currentTime=(currentsong.duration)*percent/100
         
     })
-    //listen for next and previous
+    //listen for hamburger
+    document.querySelector(".hamburgerContainer").addEventListener("click",()=>{
+        document.querySelector(".left").style.left="0"
+    })
+    
+    //listen for close button
+    document.querySelector(".close").addEventListener("click",()=>{
+        document.querySelector(".left").style.left="-120%"
+    })
     
 }
 
