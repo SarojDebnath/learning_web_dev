@@ -166,11 +166,11 @@ body {
     bottom: 30px;
     background-color: #e2d9d9;
     border-radius: 10px;
-    height: 40px;
     padding: 12px;
     filter: invert(1);
     width: 70vw;
     min-height: 40px;
+    font-size: 15px;
 }
 
 .songbuttons {
@@ -250,6 +250,7 @@ body {
 .abovebar {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 .songinfo,
@@ -268,6 +269,7 @@ body {
     align-items: center;
     gap: 14px;
 }
+
 .left .close {
     display: none;
 }
@@ -281,6 +283,7 @@ body {
         width: 370px;
         background-color: black;
     }
+
     .left .close {
         position: absolute;
         right: 31px;
@@ -290,6 +293,7 @@ body {
         z-index: 1;
         display: block;
     }
+
     .right {
         width: 100vw;
     }
@@ -297,11 +301,14 @@ body {
     .playbar {
         width: calc(100vw - 60px);
     }
-    .seekbar{
+
+    .seekbar {
         width: calc(100vw - 70px);
     }
+
     .hamburger {
         display: block;
         cursor: pointer;
     }
+    
 }
