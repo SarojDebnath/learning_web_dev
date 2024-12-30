@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --a:0;
+    --bottomplay:80px;
+}
 
 * {
     margin: 0;
@@ -99,8 +103,14 @@ body {
     border-radius: 5px;
     background-color: #252525;
     position: relative;
+    transition: all .9s;
 }
-
+.card:hover{
+    background-color: rgb(105,103,103);
+    cursor: pointer;
+    --a:1;
+    --bottomplay:140px;
+}
 .card>* {
     padding-top: 10px;
 }
@@ -120,9 +130,9 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 80px;
+    bottom: var(--bottomplay);
     right: 17px;
-    opacity: 0;
+    opacity: var(--a);
     transition: all 1s ease-out;
     /*opacity: 1;
     bottom: 140px;*/
