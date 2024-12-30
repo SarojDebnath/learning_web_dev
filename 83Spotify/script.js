@@ -53,11 +53,12 @@ async function getSongs(folder) {
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
         })
     })
+    return songs
 }
 
 const playMusic = (track, pause = false) => {
     //let audio = new Audio("/songs/Lakshya/" + track)
-    currentsong.src = `/songs/${currfolder}/` + track
+    currentsong.src = `songs/${currfolder}/` + track
     if (!pause) {
         currentsong.play()
         play.src = "img/pause.svg"
@@ -81,7 +82,7 @@ async function displayAlbums() {
             let folder = e.href.split("/").slice(-2)[0]
             let metadata = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
             let response = await metadata.json();
-            cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="Lakshya" class="card">
+            cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
                             <div class="play">
                                 <img src="img/play.svg" alt="">
                             </div>
@@ -160,6 +161,20 @@ async function main() {
     //Listener for volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         currentsong.volume = parseInt(e.target.value) / 100
+    })
+    //Mute event listener
+    document.querySelector(".volume>img").addEventListener("click", e=>{
+        console.log(e.target.src)
+        if (e.target.src.includes("img/volume.svg")){
+            e.target.src="img/mute.svg"
+            currentsong.volume=0
+            document.querySelector(".range").getElementsByTagName("input")[0].value=0
+        }
+        else {
+            e.target.src="img/volume.svg"
+            currentsong.volume=.1
+            document.querySelector(".range").getElementsByTagName("input")[0].value=10
+        }
     })
 
 }
