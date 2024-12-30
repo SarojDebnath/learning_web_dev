@@ -1,6 +1,6 @@
 console.log("JS script")
 let currentsong=new Audio();
-
+let songs;
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
         return "00:00";
@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs() {
     let a = await fetch("http://127.0.0.1:3000/songs/Lakshya/");
     let response = await a.text();
-    console.log(response);
+    //console.log(response);
     let div = document.createElement("div")
     div.innerHTML = response;
     let as = div.getElementsByTagName("a")
@@ -45,7 +45,7 @@ const playMusic = (track, pause=false) => {
 
 async function main() {
     //get list of all songs
-    let songs = await getSongs()
+    songs = await getSongs()
     playMusic(songs[0],true)
     let songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
     for (const song of songs) {
@@ -83,7 +83,6 @@ async function main() {
 
     //Listen for TimeUpdate event
     currentsong.addEventListener("timeupdate",()=>{
-        console.log(currentsong.currentTime,currentsong.duration);
         document.querySelector(".songtime").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)}/${secondsToMinutesSeconds(currentsong.duration)}`
         document.querySelector(".circle").style.left=(currentsong.currentTime/currentsong.duration)*100 + "%"
     })
@@ -102,6 +101,26 @@ async function main() {
     //listen for close button
     document.querySelector(".close").addEventListener("click",()=>{
         document.querySelector(".left").style.left="-120%"
+    })
+    //Listen to next and previous
+    previous.addEventListener("click",()=>{
+        currentsong.pause()
+        let index=songs.indexOf(currentsong.src.split("/").slice(-1)[0])
+        if (index-1>=0) {
+            playMusic(songs[index-1])
+        }
+    })
+    next.addEventListener("click",()=>{
+        currentsong.pause()
+        let index=songs.indexOf(currentsong.src.split("/").slice(-1)[0])
+        if (index+1<songs.length) {
+            playMusic(songs[index+1])
+        }
+        
+    })
+    //Listener for volume
+    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
+        currentsong.volume=parseInt(e.target.value)/100
     })
     
 }

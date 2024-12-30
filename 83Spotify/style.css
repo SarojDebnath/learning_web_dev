@@ -80,6 +80,9 @@ body {
 .spotifyPlaylist {
     padding: 16px;
 }
+.spotifyPlaylist h1 {
+    padding: 16px;
+}
 
 .cardContainer {
     margin: 30px;
@@ -121,8 +124,8 @@ body {
     right: 17px;
     opacity: 0;
     transition: all 1s ease-out;
-    opacity: 1;
-    bottom: 140px;
+    /*opacity: 1;
+    bottom: 140px;*/
 }
 
 .buttons>* {
@@ -246,6 +249,18 @@ body {
 .songbuttons img {
     cursor: pointer;
 }
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
 
 .abovebar {
     display: flex;
@@ -253,12 +268,17 @@ body {
     margin: 20px 0;
 }
 
-.songinfo,
-.songtime {
+.songinfo {
+    color: black;
+    padding: 0 12px;
+    width: 250px;
+}
+
+.songtime{
+    width: 125px;
     color: black;
     padding: 0 12px;
 }
-
 .hamburger {
     display: none;
 }
@@ -274,7 +294,11 @@ body {
     display: none;
 }
 
-@media (max-width:1400px) {
+.volume img {
+    display: block;
+}
+
+@media (max-width:1200px) {
     .left {
         position: absolute;
         left: -120%;
@@ -282,6 +306,7 @@ body {
         z-index: 1;
         width: 370px;
         background-color: black;
+        padding: 0;
     }
 
     .left .close {
@@ -296,19 +321,57 @@ body {
 
     .right {
         width: 100vw;
+        margin: 0;
     }
 
     .playbar {
-        width: calc(100vw - 60px);
+        width: calc(100vw - 75px);
     }
 
     .seekbar {
-        width: calc(100vw - 70px);
+        width: calc(100vw - 120px);
     }
 
     .hamburger {
         display: block;
         cursor: pointer;
     }
-    
+    .card{
+        width: 44vw;
+    }
+    .cardContainer{
+        margin: 0;
+        justify-content: center;
+    }
+    .songtime {
+        position: relative;
+        left: 0;
+    }
+   .buttons{
+    display: flex;
+    align-items: center;
+   }
+   .abovebar{
+     flex-direction: column;
+     gap: 23px;
+     align-items: center;
+   }
+   .songinfo, .songtime {
+    width: auto;
+   }
+   .info div {
+        word-break: break-all;
+   }
+   .timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+   }
+}
+@media (max-width:400px){
+    .card {
+        width: 84vw;
+    }
 }
