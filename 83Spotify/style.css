@@ -335,6 +335,9 @@ body {
         width: 370px;
         background-color: black;
         padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
     }
 
     .left .close {
@@ -345,6 +348,7 @@ body {
         cursor: pointer;
         z-index: 1;
         display: block;
+        
     }
 
     .right {
@@ -437,5 +441,13 @@ body {
     .header{
         padding: 7px;
     }
-
+    .library {
+        height: 85vh;
+    }
+    .left{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+    
 }
