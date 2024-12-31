@@ -90,7 +90,7 @@ async function displayAlbums() {
                             <p>${response.description}</p>
                         </div>`
         }
-    }
+    } 
 
     //Load the playlist when card is clicked
     Array.from(document.getElementsByClassName("card")).forEach(e => {
@@ -160,6 +160,9 @@ async function main() {
     //Listener for volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         currentsong.volume = parseInt(e.target.value) / 100
+        if (currentsong.volume > 0){
+            document.querySelector(".volume>img").src=document.querySelector(".volume>img").src.replace("mute.svg","volume.svg")
+        }
     })
     //Mute event listener
     document.querySelector(".volume>img").addEventListener("click", e=>{
